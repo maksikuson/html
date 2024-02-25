@@ -1,1 +1,134 @@
-<!-- Тут буде сторінка з чатом десь у неділю-понеділок -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #c2c2c2;
+        margin: 0;
+        padding: 0;
+    }
+    .chat-container {
+        width: 60%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns:auto;
+        grid-template-rows: repeat(auto);
+        gap: 5px;
+    }
+    .message {
+        display: flex;
+    }
+    .message-text {
+        padding: 10px;
+        margin: 0 auto;
+        max-width: 80%;
+    }
+    .message:nth-child(odd) .message-text {
+        background-color: #e8889f;
+        color: #fff;
+        border-radius: 20px 20px 20px 0px;
+        text-align: start;
+    }
+    .message:nth-child(even) .message-text {
+        background-color: #6ea2d8;
+        color: #fff;
+        border-radius: 20px 20px 0px 20px;
+        text-align: end;
+    }
+    .message-avatar {
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .message-avatar img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .message-avatar div {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .message-text .message-meta {
+        display: block;
+        font-size: 12px;
+        color: #000000;
+    }
+</style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="message">
+            <div class="message-avatar">
+                <img src="./avatar.chat/avatar_2.png" alt="Avatar">
+                <div>Anie Smith</div> 
+                <div>4 hours ago</div> 
+            </div>
+            <div class="message-text">
+                <div class="message-meta"></div>
+                <p>Ut in enim scelerisque, pharetra velit id, maximus nunc</p>
+            </div>
+        </div>
+        <div class="message">
+            <div class="message-text">
+                <div class="message-meta"></div>
+                <p>Fusce auctor nibh at consequat efficitur</p>
+            </div>
+            <div class="message-avatar">
+                <img src="/avatar.chat/avatar_1.png" alt="Avatar">
+                <div>Jack Silvestor</div> 
+                <div>4 hours ago</div> 
+            </div>
+        </div>
+        <div class="message">
+            <div class="message-avatar">
+                <img src="/avatar.chat/avatar_2.png" alt="Avatar">
+                <div>Anie Smith</div> 
+                <div>4 hours ago</div> 
+            </div>
+            <div class="message-text">
+                <div class="message-meta"></div>
+                <p>Etiam lacinia velit id venenatis sodales</p>
+            </div>
+        </div>
+        <div class="message">
+            <div class="message-text">
+                <div class="message-meta"></div>
+                <p>Mauris ac mi quis ante dignissim tempus in non nulla</p>
+            </div>
+            <div class="message-avatar">
+                <img src="/avatar.chat/avatar_1.png" alt="Avatar">
+                <div>Jack Silvestor</div> 
+                <div>3 hours ago</div> 
+            </div>
+        </div>
+        <div class="message">
+            <div class="message-avatar">
+                <img src="/avatar.chat/avatar_2.png" alt="Avatar">
+                <div>Anie Smith</div> 
+                <div>3 hours ago</div> 
+            </div>
+            <div class="message-text">
+                <div class="message-meta"></div>
+                <p>Fusce quis ex fringilla, congue diam vel, sodales tortor</p>
+            </div>
+        </div>
+        <div class="message">
+            <div class="message-text">
+                <div class="message-meta"></div>
+                <p>Curabitur quis dolor eget elit pulvinar sollicitudin</p>
+            </div>
+            <div class="message-avatar">
+                <img src="/avatar.chat/avatar_1.png" alt="Avatar">
+                <div>Jack Silvestor</div> 
+                <div>3 hours ago</div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
